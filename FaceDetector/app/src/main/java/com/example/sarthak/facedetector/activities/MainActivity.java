@@ -65,6 +65,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+        // close fab menu
+        closeFABMenu();
+
         if (resultCode == RESULT_OK) {
 
             if (requestCode == AppConstants.CAMERA_REQUEST) {
@@ -101,11 +104,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.fabCamera :
+                // start camera intent
                 Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(cameraIntent, AppConstants.CAMERA_REQUEST);
                 break;
 
             case R.id.fabGallery :
+                // start gallery intent
                 Intent intent = new Intent();
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
@@ -142,7 +147,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /**
-     *
+     * Detects faces in a given image and draws a rectangle canvas around them.
      *
      * @param bitmap is the image loaded from camera or gallery
      */
