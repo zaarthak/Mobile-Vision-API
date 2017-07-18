@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FaceRecognition</string>
+    <string name="low_storage_error">Insufficient internal storage</string>
+    <string name="text_recogniser_error_message">Detector dependencies are not yet available.</string>
+</resources>
