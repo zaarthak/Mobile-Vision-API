@@ -1,9 +1,8 @@
-package com.example.sarthak.facerecognition;
+package com.example.sarthak.facerecognition.activities;
 
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.sarthak.facerecognition.R;
 import com.example.sarthak.facerecognition.utils.AppConstants;
 import com.google.android.gms.vision.Frame;
 import com.google.android.gms.vision.text.TextBlock;
