@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FaceDetector</string>
+    <string name="face_detection_error_message">Face detection could not be set up on your device.</string>
+</resources>
