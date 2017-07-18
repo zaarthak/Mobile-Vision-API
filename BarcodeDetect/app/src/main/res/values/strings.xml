@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BarcodeDetect</string>
+    <string name="barcode_error_message">Could not set up barcode detector</string>
+    <string name="incorrect_image_message">Scan Failed: Invalid Image</string>
+</resources>
