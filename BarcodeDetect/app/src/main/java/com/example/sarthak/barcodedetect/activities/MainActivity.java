@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setUpView();
 
         //------------------------------------------------------------------
-        // onClick listeners for Floating Buttons
+        // onClick listeners for floating buttons
         //------------------------------------------------------------------
         fabAdd.setOnClickListener(this);
         fabCamera.setOnClickListener(this);
